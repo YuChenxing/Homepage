@@ -1,0 +1,7 @@
+﻿.Chrome-bg{ width: 100%; height: 100%; background: rgba(0,0,0,0.5); position: fixed; top: 0; left: 0; z-index: 999; display: none;}
+.Chrome{ width: 472px; height: 254px; background: #fff; border: 1px solid #eee; position: fixed; top: 50%; left: 50%; margin: -127px 0 0 -236px; z-index: 1000;  display: none;}
+.Chrome h3{ font-size: 24px; color: #00ccb8; padding: 50px 100px 20px 70px; font-weight: normal;}
+.Chrome p{ font-size:14px; color: #789e9e; line-height: 28px; padding: 0 0 0 70px;}
+.closeBtn{ width: 18px; height: 18px; background: url(img/chrome-close.png) no-repeat center center; position: absolute; right: 20px; top: 20px;}
+.chromeDown{ display: block; width: 90px; height: 41px; line-height: 36px; text-align: center; color: #fff; background:url(img/chrome-down.png) no-repeat; position: absolute; margin: 15px 0 0 70px; -moz-transition: all 0.5s; -ms-transition: all 0.5s; -o-transition: all 0.5s; -webkit-transition: all 0.5s; transition: all 0.5s;}
+.chromeDown:hover{color: #360}

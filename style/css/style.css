@@ -1,0 +1,229 @@
+﻿/*头部*/
+.header { width: 100%; height: auto; margin: 0 auto; background: rgba(0,0,0,0.3); position: fixed; top: 0; z-index: 200;}
+.headerIn { width: 1000px; height: 60px; margin: 0 auto;}
+/*logo*/
+.logo { width: 85px; height: 39px; background: url(img/logo.png) no-repeat; float: left; margin: 10px 0 0 0;}
+.logo a { display: block; height: 0px; padding: 39px 0 0 0; overflow: hidden;}
+/*菜单*/
+
+.navBtn { }
+.navM { display: none; }
+.navBtn2 { width: 25px; height: 20px; display: block; background:url(img/menu.gif) no-repeat; position: absolute; right: 30px; top: 20px; transition: -webkit-transform 300ms,transform 300ms,top 400ms; }
+.navShow { -webkit-transform: rotate(-90deg); }
+/*导航*/
+.nav { float: right; position: relative;}
+.nav ul li { float: left; width: 100px; height: 60px; position: relative;-moz-transform-style: preserve-3d; -ms-transform-style: preserve-3d; -o-transform-style: preserve-3d; -webkit-transform-style: preserve-3d; transform-style: preserve-3d;}
+.nav ul li .navFont { display: block; width: 100px; height: 60px; text-align: center; font: 14px/60px Microsoft YaHei;}
+.nav ul li .navFont1, .nav ul li .navFont2 { position: absolute; top: 0; left: 0; -moz-transition: all 0.3s; -ms-transition: all 0.3s; -o-transition: all 0.3s; -webkit-transition: all 0.3s; transition: all 0.3s; }
+.nav ul li .navFont1 { color: #FFF; }
+.nav ul li .navFont2 { color: #00ccb8; -moz-transform: rotateX(-90deg) translateZ(20px) translateY(20px); -ms-transform: rotateX(-90deg) translateZ(20px) translateY(20px); -o-transform: rotateX(-90deg) translateZ(20px) translateY(20px); -webkit-transform: rotateX(-90deg) translateZ(20px) translateY(20px); transform: rotateX(-90deg) translateZ(20px) translateY(20px);}
+/*导航鼠标滑过状态和导航选中状态*/
+.nav ul li:hover .navFont2, .nav ul li.cur .navFont2 { -moz-transform: none; -ms-transform: none; -o-transform: none; -webkit-transform: none; transform: none;}
+.nav ul li:hover .navFont1, .nav ul li.cur .navFont1 { -moz-transform: rotateX(90deg) translateZ(20px) translateY(-20px); -ms-transform: rotateX(90deg) translateZ(20px) translateY(-20px); -o-transform: rotateX(90deg) translateZ(20px) translateY(-20px); -webkit-transform: rotateX(90deg) translateZ(20px) translateY(-20px); transform: rotateX(90deg) translateZ(20px) translateY(-20px);}
+
+.header01 { background: #00ccb8;}
+.nav ul li .navFont3 { color:#028d7f;}
+
+
+/*banner*/
+.banner { width: 1260px; height: 700px; position: relative; margin: 0 auto; overflow: hidden;}
+.banner img { width: 100%; height: auto;}
+.banner ul { width: 6300px; height: 700px; position: relative; left: 0;}
+.banner ul li { float: left; width: 1260px; height: 700px;}
+/*banner圆点*/
+.banner ol { position: absolute; left: 50%; bottom: 0px; margin: 0 0 0 -57px;}
+.banner ol li { float: left; width: 28px; height: 50px; margin: 0 5px; background:url(img/banner_ol.jpg) no-repeat left bottom; cursor: pointer; -moz-transition: all 0.3s; -ms-transition: all 0.3s; -o-transition: all 0.3s; -webkit-transition: all 0.3s; transition: all 0.3s;}
+.banner ol .banCurrent, .banner ol li:hover { background: url(img/banner_ol_cur.jpg) no-repeat;}
+/*banner左右按钮*/
+.banner .leftBtn, .banner .rightBtn { display: block; width: 41px; height: 69px; position: absolute; top: 50%; margin: -35px 0 0 0; background: url(img/arr.png) no-repeat; display: none;}
+.banner .leftBtn { background-position: -84px 0; left: 10px;}
+.banner .rightBtn { background-position: -125px 0; right: 10px;}
+.banner .leftBtn:hover { background-position: 0 0;}
+.banner .rightBtn:hover { background-position: -42px 0;}
+
+.padBanner { display: none;}
+
+/*服务项目*/
+.service { width: 100%; height: auto; background: url(img/service_bg.jpg) no-repeat center top; position: relative;}
+.serHua { width: 100%; height: 8px; background: url(img/hua.png); position: absolute; left: 0; top: -6px;}
+.serviceIn { width: 1000px; height: auto; margin: 0 auto;}
+/*服务项目标题*/
+.serviceIn .serTitle { text-align:center; padding: 20px 0 0 0;}
+.serviceIn .serTitle p { text-align: center; color: #999;}
+/*服务项目内容*/
+.serviceIn .serCon { width: 100%; height: auto;}
+.serviceIn .serCon ul li { float: left; width: 250px; margin: 70px 0;}
+.serviceIn .serCon ul li h4 { text-align: center; color: #666; font-size: 18px; font-weight: normal;}
+.serviceIn .serCon ul li p { text-align: center; color: #999;}
+.serviceIn .serCon ul li .serconImg00, .serviceIn .serCon ul li .serconImg01, .serviceIn .serCon ul li .serconImg02, .serviceIn .serCon ul li .serconImg03{ display: block; width: 222px; height: 214px; background:url(img/service_pic.png) no-repeat 0 -212px; margin: 0 0 0 40px; -moz-transition: all 0.4s; -ms-transition: all 0.4s; -o-transition: all 0.4s; -webkit-transition: all 0.4s;  transition: all 0.4s;}
+.serviceIn .serCon ul li .serconImg01 { background-position: -244px -212px;}
+.serviceIn .serCon ul li .serconImg02 { background-position: -490px -212px;}
+.serviceIn .serCon ul li .serconImg03 { background-position: -730px -212px;}
+.serviceIn .serCon ul li .serconImg00:hover { background-position: 0 0;}
+.serviceIn .serCon ul li .serconImg01:hover { background-position: -244px 0;}
+.serviceIn .serCon ul li .serconImg02:hover { background-position: -490px 0;}
+.serviceIn .serCon ul li .serconImg03:hover { background-position: -730px 0;}
+
+/*作品展示*/
+.works { width: 100%; height: auto; background: #c7edf5;}
+.workIn { width: 1000px; height: auto; margin: 0 auto;}
+/*作品展示标题*/
+.workIn .workTitle { text-align:center; padding: 20px 0 0 0;}
+.workIn .workTitle p { text-align: center; color: #999;}
+/*web作品展示内容*/
+.web { width: 1000px; height: auto; margin: 30px auto 0;}
+.webUl { width: 100%; height: auto; margin: 20px 0 0 0;}
+.webUl li { width: 300px; height: 346px; float: left; margin: 0 1% 4% 2%; }
+.webUl li .pic {height: 296px; width: 296px; border: 2px solid #FFF; position: relative;}
+.webUl li .pic img { display: block; width: 296px; height: auto}
+.webUl li .pic a{ color: #00ccb8; font-size: 16px; line-height: 34px; margin: 10px 0;}
+.webUl li .webCur { width: 300px; height: 6px; background: #94c1c1;}
+.webUl li .webHover { width:296px; height: 296px; background: rgba(0,0,0,0.5); position: absolute; cursor: pointer; display: none;}
+.webUl li .webHover img { width: 35px; height: 35px; margin: 130px 0 0 126px; }
+
+/*web作品弹窗内容*/
+.wclick0, .wclick1, .wclick2, .wclick3, .wclick4, .wclick5 {width: 100%; height: 100%;background: rgba(0,0,0,0.6); position: fixed; z-index: 201; display: none; top: 0; left: 0;}
+.wcPic{margin: 50px auto 0; width: 1000px; height: 600px; overflow: scroll; overflow-x: hidden;}
+.wcPic img { width: 1000px; height: auto; display: block;}
+.close { height: 35px; width: 35px; position: absolute; top: 5%; right: 5%; background: url(img/fangda.png) no-repeat; -moz-transform: rotate(45deg); -ms-transform: rotate(45deg); -o-transform: rotate(45deg); -webkit-transform: rotate(45deg); transform: rotate(45deg); -moz-transition: all 0.3s; -ms-transition: all 0.3s; -o-transition: all 0.3s; -webkit-transition: all 0.3s; transition: all 0.3s;}
+.close:hover { -moz-transform: rotate(135deg); -ms-transform: rotate(135deg); -o-transform: rotate(135deg); -webkit-transform: rotate(135deg); transform: rotate(135deg);}
+
+/*app作品展示内容*/
+.app { margin: 30px auto 0;}
+.appIn { width: 868px; height: 440px; position: relative; margin: 20px auto;}
+.appIn .buttons .alBtn, .appIn .buttons .arBtn { position: absolute; width: 50px; height: 44px; top: 50%; margin: -22px 0 0 0; background: url(img/jianTou.png) no-repeat; cursor: pointer; z-index: 101; display: none;}
+.appIn .buttons .alBtn { background-position: left top; left: 0px; }
+.appIn .buttons .arBtn { background-position: right top; right: 0px;}
+.appIn .imagelist { width: 629px; height: 440px; background: url(img/iPhone.png) no-repeat left top; position: relative; overflow: hidden; margin: 0 auto;}
+.appIn .imagelist ul li { position: absolute;}
+.appIn .imagelist ul li img { width: 100%; height: 100%;}
+.appIn .imagelist ul li.no0 { width: 114px; height: 206px; left: -200px; top: 224px; z-index: 98;}
+.appIn .imagelist ul li.no1 { width: 149px; height: 269px; left: 8px; top: 132px; z-index: 99;}
+.appIn .imagelist ul li.no2 {width: 196px;height: 353px;left: 216px; top: 40px; z-index: 100;}
+.appIn .imagelist ul li.no3 {width: 149px;height: 269px;left: 471px; top: 132px; z-index: 99;}
+.appIn .imagelist ul li.no4 {width: 114px;height: 206px;left: 726px; top: 224px; z-index: 98;}
+.appIn .imagelist ul li.waiting { display: none;}
+
+.padAppUi{ display: none;}
+
+/*banner作品展示内容*/
+banWork_img{ margin: 60px auto 0;}
+.bwIn { width: 982px; height: 30px; margin: 50px auto 0; position: relative; padding-top: 290px; overflow: hidden;}
+.bwIn .bwImgList ul li { position: absolute; border-radius: 5px; border: 5px solid #F1F1F1;}
+.bwIn .bwImgList ul li img { width: 100%; height: 100%;}
+.bwIn .bwImgList ul li.bwLi0 { width: 307px; height: 155px; left: -24px; top: 56px; z-index: 90;}
+.bwIn .bwImgList ul li.bwLi1 { width: 444px; height: 187px; left: 0;top: 41px; z-index: 91;}
+.bwIn .bwImgList ul li.bwLi2 { width: 533px; height: 225px; left: 70px; top: 22px; z-index: 92;}
+.bwIn .bwImgList ul li.bwLi3 { width: 640px; height: 270px; left: 170px; top: 0; z-index: 93;}
+.bwIn .bwImgList ul li.bwLi4{ width: 533px; height: 225px; left: 377px; top: 22px; z-index: 92;}
+.bwIn .bwImgList ul li.bwLi5 { width: 444px; height: 187px; left: 528px; top: 41px; z-index: 91;}
+
+
+.bwIn .bwBnts .bwLBnt, .bwIn .bwBnts .bwRBnt { position: absolute; width: 50px; height: 44px; background: url(img/jianTou.png) no-repeat; top: 116px; z-index: 999; cursor: pointer; display: none;}
+.bwIn .bwBnts .bwLBnt { background-position: left top; left: 16px;}
+.bwIn .bwBnts .bwRBnt { background-position: right top; right: 16px;}
+
+.bwIn .bwImgList ul li div.hei { position: absolute; width: 100%; height: 100%;background-color: black; opacity: 0.6; _filter: alpha(opacity=50);}
+.bwIn .bwImgList ul li.bwLi3 div.hei { display: none;}
+
+.bwIn .bwNav { width: 300px; height: 24px; margin: 0 auto;}
+.bwIn .bwNav ol li { float: left; width: 13px; height: 14px;background: url(img/bwCur.png) no-repeat left top; margin-right: 10px; cursor: pointer;}
+.bwIn .bwNav ol li.bwLiCur { background: url(img/bwCur.png) no-repeat left bottom;}
+.bwIn .bwNav ol li:hover { background: url(img/bwCur.png) no-repeat left center;}
+
+.padBanw{ display: none;}
+.mobBanw { display: none;}
+
+/*我的技能*/
+.skill { width: 100%; height: auto; background: url(img/skill_bg.jpg) center top; }
+.skillIn { width: 1000px; height: auto; margin: 0 auto;}
+/*我的技能标题*/
+.skillIn .skillTitle { text-align:center; padding: 40px 0 0 0;}
+.skillIn .skillTitle p { text-align: center; color: #999;}
+/*我的技能内容*/
+.skiCon { width: 1000px; height: 500px; margin: 100px auto 0; position: relative;}
+.skiCon div { position: absolute; opacity: 0; cursor: pointer;}
+.skiCon div img { -moz-transition: all 0.8s; -ms-transition: all 0.8s; -o-transition: all 0.8s; -webkit-transition: all 0.8s; transition: all 0.8s; backface-visibility: hidden;}
+.skiCon div img:hover { -transform: rotateY(360deg); -ms-transform: rotateY(360deg); -o-transform: rotateY(360deg); -webkit-transform: rotateY(360deg); transform: rotateY(360deg);}
+.skiCon div a { color: #45cfc1; font-size: 18px; text-align: center; text-decoration: none; display: block;}
+.skiCon .skiCon_img0 { top: 40px; left: 0px;}
+.skiCon .skiCon_img1 { top: 236px; left: 66px;}
+.skiCon .skiCon_img2 { top: 92px; left: 246px;}
+.skiCon .skiCon_img3 { top: 310px; left: 290px;} 
+.skiCon .skiCon_img4 { top: 24px; left: 460px;}
+.skiCon .skiCon_img5 { top: 220px; left: 522px;}
+.skiCon .skiCon_img6 { top: 300px; left: 692px;}
+.skiCon .skiCon_img7 { top: 198px; left: 860px;}
+
+.skiCon.skiCon_cur .skiCon_img0 { -moz-animation:imgShow 1s ease 0s forwards; -ms-animation:imgShow 1s ease 0s forwards; -o-animation:imgShow 1s ease 0s forwards; -webkit-animation:imgShow 1s ease 0s forwards; animation:imgShow 1s ease 0s forwards;}
+.skiCon.skiCon_cur .skiCon_img1 { -moz-animation:imgShow 1s ease 0.6s forwards; -ms-animation:imgShow 1s ease 0.6s forwards; -o-animation:imgShow 1s ease 0.6s forwards; -webkit-animation:imgShow 1s ease 0.6s forwards; animation:imgShow 1s ease 0.6s forwards;}
+.skiCon.skiCon_cur .skiCon_img2 { -moz-animation:imgShow 1s ease 1.2s forwards; -ms-animation:imgShow 1s ease 1.2s forwards; -o-animation:imgShow 1s ease 1.2s forwards; -webkit-animation:imgShow 1s ease 1.2s forwards; animation:imgShow 1s ease 1.2s forwards;}
+.skiCon.skiCon_cur .skiCon_img3 { -moz-animation:imgShow 1s ease 1.8s forwards; -ms-animation:imgShow 1s ease 1.8s forwards; -o-animation:imgShow 1s ease 1.8s forwards; -webkit-animation:imgShow 1s ease 1.8s forwards; animation:imgShow 1s ease 1.8s forwards;}
+.skiCon.skiCon_cur .skiCon_img4{ -moz-animation:imgShow 1s ease 2.4s forwards; -ms-animation:imgShow 1s ease 2.4s forwards; -o-animation:imgShow 1s ease 2.4s forwards; -webkit-animation:imgShow 1s ease 2.4s forwards; animation:imgShow 1s ease 2.4s forwards;}
+.skiCon.skiCon_cur .skiCon_img5 {-moz-animation:imgShow 1s ease 3.0s forwards; -ms-animation:imgShow 1s ease 3.0s forwards; -o-animation:imgShow 1s ease 3.0s forwards; -webkit-animation:imgShow 1s ease 3.0s forwards; animation:imgShow 1s ease 3.0s forwards;}
+.skiCon.skiCon_cur .skiCon_img6 { -moz-animation:imgShow 1s ease 3.6s forwards; -ms-animation:imgShow 1s ease 3.6s forwards; -o-animation:imgShow 1s ease 3.6s forwards; -webkit-animation:imgShow 1s ease 3.6s forwards; animation:imgShow 1s ease 3.6s forwards;}
+.skiCon.skiCon_cur .skiCon_img7{-moz-animation:imgShow 1s ease 4.2s forwards; -ms-animation:imgShow 1s ease 4.2s forwards; -o-animation:imgShow 1s ease 4.2s forwards; -webkit-animation:imgShow 1s ease 4.2s forwards; animation:imgShow 1s ease 4.2s forwards;}
+@-moz-keyframes imgShow {
+	from { opacity: 0;}
+	to { opacity: 1;}
+}
+@-ms-keyframes imgShow {
+	from { opacity: 0;}
+	to { opacity: 1;}
+}
+@-o-keyframes imgShow {
+	from { opacity: 0;}
+	to { opacity: 1;}
+}
+@-webkit-keyframes imgShow {
+	from { opacity: 0;}
+	to { opacity: 1;}
+}
+@keyframes imgShow {
+	from { opacity: 0;}
+	to { opacity: 1;}
+}
+
+.padSkill { display: none;}
+
+/*关于我*/
+.about { width: 100%; height: auto; background: url(img/about_bg.jpg) center top; }
+.aboutIn { width: 1000px; height: auto; margin: 0 auto;}
+/*关于我标题*/
+.aboutIn .aboutTitle { text-align:center; padding: 60px 0 0 0;}
+.aboutIn .aboutTitle p { text-align: center; color: #999;}
+/*关于我内容*/
+.aboutCon { width: 1000px; height: 690px; margin: 0px auto;}
+.aboutCon_left { float: left; width: 40%; height:auto; padding: 90px 0 0 60px; box-sizing: border-box; position: relative;}
+
+.aboutCon_left .aCon_l_img {width: 153px; height: 153px; position: absolute; left: 67px; top: 102px; cursor: pointer;}
+.aboutCon_left .aCon_l_img img { position:absolute; left: 0; top: 0; transition: all 1s; backface-visibility:hidden; }
+.aboutCon_left .aCon_l_img:hover .about_img00 { transform:rotateY(540deg); }
+.aboutCon_left .about_img01 { transform:rotateY(-540deg); }
+.aboutCon_left .aCon_l_img:hover .about_img01 { transform:rotateY(0deg); }
+
+.aboutCon_left .aCon_l_title { color:#789e9e; font-size: 16px; line-height: 28px; padding: 50px 0 0 0;}
+
+.aboutCon_right { float: left; width: 60%; height:auto; padding: 98px 0 0 0; box-sizing: border-box;}
+.aboutCon_right .aCon_r_top h3 { color: #00ccb8; font-size: 30px; font-weight: normal;}
+.aboutCon_right .aCon_r_top ol { margin: 30px 0 0 0;}
+.aboutCon_right .aCon_r_top ol li { color: #789e9e; font-size: 16px; line-height: 28px;}
+
+.aboutCon_right .aCon_r_bottom { margin: 50px 0 0 0;}
+.aboutCon_right .aCon_r_bottom h4 { color: #00ccb8; font-size: 20px; border-bottom: 2px solid #00ccb8; margin: 0 140px 20px 0;}
+.aboutCon_right .aCon_r_bottom p { color: #789e9e; font-size: 16px; line-height: 28px;}
+.aboutCon_right .aCon_r_bottom ul { margin: 10px 0 0 0;}
+.aboutCon_right .aCon_r_bottom ul li{ float: left; width: 49px; height: 49px; position: relative; margin: 0 26px 0 0;}
+.aboutCon_right .aCon_r_bottom ul .aCon_r_bot_li00 a, .aboutCon_right .aCon_r_bottom ul .aCon_r_bot_li01 a, .aboutCon_right .aCon_r_bottom ul .aCon_r_bot_li02 a { display: block; width: 49px; height: 49px; background: url(img/icon.png) no-repeat left top; transition: all 0.5s;}
+.aboutCon_right .aCon_r_bottom ul .aCon_r_bot_li01 a { background-position: -62px top;}
+.aboutCon_right .aCon_r_bottom ul .aCon_r_bot_li02 a { background-position: right top;}
+
+.aboutCon_right .aCon_r_bottom ul .aCon_r_bot_li00 a:hover { background-position: left bottom;}
+.aboutCon_right .aCon_r_bottom ul .aCon_r_bot_li01 a:hover { background-position: -62px bottom;}
+.aboutCon_right .aCon_r_bottom ul .aCon_r_bot_li02 a:hover { background-position: right bottom;}
+
+.aboutCon_right .aCon_r_bottom ul .aCon_r_bot_li00 span ,.aboutCon_right .aCon_r_bottom ul .aCon_r_bot_li01 span, .aboutCon_right .aCon_r_bottom ul .aCon_r_bot_li02 span { position: absolute; top: 51px; left: -10px; width: 150px; height: 50px; line-height: 62px; font-size: 16px; text-align: center; color: #789e9e; background: url(img/acon_r_bot_li_bg.png) no-repeat; display: none;}
+.aboutCon .Copyright{ color: #789e9e; font-size: 12px; text-align: center; padding: 660px 0 0 0;}
+
+/*返回顶部*/
+.scrollUp a { display: block; width: 46px; height: 0px; padding-top: 46px; overflow: hidden; background:url(img/top.png) no-repeat; position: fixed; bottom: 20px; right: 20px; z-index: 11;}

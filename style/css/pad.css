@@ -1,0 +1,169 @@
+﻿.headerIn { width: 90%; }
+.nav { float: left; width: 70%;}
+.nav ul li { width: 20%;}
+
+.banner { display: none;}
+
+/*padBanner内容*/
+.padBanner { width: 100%; height: auto; overflow: hidden; position:relative; display:block;}
+.padBanner ul li { width: 100%; height: auto; display: none;}
+.padBanner img { width: 100%; height: auto; display: block;}
+.padBanner ol { position: absolute; left: 50%; bottom: 2px; margin: 0 0 0 -57px;}
+.padBanner ol li { float: left; width: 28px; height: 50px; margin: 0 5px; background:url(img/banner_ol.jpg) no-repeat left bottom; cursor: pointer; -moz-transition: all 0.3s; -ms-transition: all 0.3s; -o-transition: all 0.3s; -webkit-transition: all 0.3s; transition: all 0.3s;}
+.padBanner ol .padBan_cur, .padBanner ol li:hover { background:url(img/banner_ol_cur.jpg) no-repeat;}
+
+.serviceIn { width: 90%;}
+.serviceIn .serCon ul li { width: 50%; margin: 6% auto; padding: 0 5%; box-sizing: border-box;}
+.serviceIn .serCon ul li .serconImg00, .serviceIn .serCon ul li .serconImg01, .serviceIn .serCon ul li .serconImg02,.serviceIn .serCon ul li .serconImg03 { margin: 0;}
+.serviceIn .serCon ul li h4 { text-align: left; font-weight: 700; font-size: 20px; margin: 0 0 6% 0;}
+.serviceIn .serCon ul li p { text-align: left; font-size: 14px;}
+
+.workIn { width: 90%;}
+.web { width: 100%;}
+.webUl li{ width: 46%; margin: 0 2% 4% 2%;}
+.webUl li .pic a { font-size: 18px; line-height: 40px;}
+.wcPic { width: 90%; height: 90%;}
+.close { top: 2%;}
+.wcPic img { width: 100%;}
+@media screen and (max-width:710px) {
+	.webUl li{ width: 76%; margin: 0 12% 4% 12%;}
+}
+.app .appIn { display: none;}
+
+/*padAppUi展示内容*/
+
+.padAppUi { width: 100%; height: auto; margin: 60px auto 0; display: block;}
+.padAppUi img { width: 100%; height: 269px;}
+.padApp, .padUi { width: 50%; height: auto; float: left;}
+
+.padAppIn, .padUiIn { width: 264px; height: 370px; background: url(img/iPhone.png) no-repeat 60px -100px; position: relative;}
+.padAppIn .padAppIn_ul, .padUiIn .padUiIn_ul { width: 149px; height: 269px; background: pink; position: absolute;left: 68px; top: 32px; overflow: hidden;}
+.padAppIn .padAppIn_ul ul, .padUiIn .padUiIn_ul ul{ width: 1788px; height: 269px; position: relative; left: 0;}
+.padAppIn .padAppIn_ul ul li, .padUiIn .padUiIn_ul ul li { float: left; width: 149px; height: 269px;}
+
+.padAppBnts .padApp_LBnt, .padAppBnts .padApp_RBnt, .padUiBnts .padUi_LBnt, .padUiBnts .padUi_RBnt { position: absolute; width: 44px; height: 44px; top: 50%; margin: -22px 0 0 0; background: url(img/jianTou.png) no-repeat; z-index: 101; display: none;}
+.padAppBnts .padApp_LBnt, .padUiBnts .padUi_LBnt { background-position: left top; left: 8px; }
+.padAppBnts .padApp_RBnt, .padUiBnts .padUi_RBnt { background-position: right top; right: -14px;}
+
+.padAppIn ol, .padUiIn ol { width: 100%; height: 24px; position: absolute; bottom: 0; left: 50%; margin: 0 0 0 -102px;}
+.padUiIn ol{ width: 80%; margin: 0 0 0 -44px;}
+.padAppIn ol li, .padUiIn ol li { float: left; width: 13px; height: 14px; background: url(img/bwCur.png) no-repeat left top; margin-right: 8px; cursor: pointer;}
+.padAppIn ol li.padApp_cur, .padUiIn ol li.padUi_cur { background: url(img/bwCur.png) no-repeat left bottom;}
+.padAppIn ol li:hover, .padUiIn ol li:hover { background: url(img/bwCur.png) no-repeat left center;}
+
+.banWork_img { padding: 60px 0 0 0;}
+.bwIn { display: none;}
+
+/*padBannerWork内容*/
+.padBanw { width: 100%; height: auto; position: relative; display: block; padding: 40px 0 80px 0; overflow: hidden;}
+.padBanw img { display: block;}
+.padBanwIn { width: 580px; height: auto; margin: 0 auto; position: relative; border-radius: 8px; border: 6px solid #F1F1F1; -moz-perspective: 500px; -ms-perspective: 500px; -o-perspective: 500px; -webkit-perspective: 500px; perspective: 500px;}
+.padBanwIn .maoni p { width: 94px; height: 42px; position: absolute; background: url(img/padBwImg00.jpg) no-repeat; transition: all 1s ease 0s;}
+.padBanwIn.fei .maoni p { opacity: 0;}
+
+.padBanwBnts .padBanw_LBnt, .padBanwBnts .padBanw_RBnt { position: absolute; width: 44px; height: 44px; top: 50%; margin: -22px 0 0 0; background: url(img/jianTou.png) no-repeat; z-index: 101; display: none;}
+.padBanwBnts .padBanw_LBnt { background-position: left top; left: 2%; }
+.padBanwBnts .padBanw_RBnt { background-position: right top; right: 2%;}
+
+.skillIn { width: 90%;}
+.skiCon { display: none;}
+
+/*ipad_我的技能内容*/
+.padSkill { width: 100%; height: auto; padding: 80px  0; display: block;}
+.padSkill_left, .padSkill_right { width: 50%; height: auto; float: left;}
+.padSkill_left li { height: 50px; margin: 0 0 3% 0; padding: 0 0 0 1%; cursor: pointer; opacity:0; }
+.padSkill_left li span { float: left; width: 30% ; height: 22px; font-size: 18px;  line-height: 18px; color: #45cfc1;}
+.padSkill_left li div { float: left; width: 70%; height: 16px; border-radius: 20px; border: 2px solid #45cfc1; position: relative;}
+
+.padSkill_left.padS_cur li.padSkill_li0 { -moz-animation: padSk_liShow 1s ease 0s forwards; -ms-animation: padSk_liShow 1s ease 0s forwards; -o-animation: padSk_liShow 1s ease 0s forwards;-webkit-animation: padSk_liShow 1s ease 0s forwards; animation: padSk_liShow 1s ease 0s forwards; }
+.padSkill_left.padS_cur li.padSkill_li1 { -moz-animation: padSk_liShow 1s ease 0.6s forwards; -ms-animation: padSk_liShow 1s ease 0.6s forwards; -o-animation: padSk_liShow 1s ease 0.6s forwards; -webkit-animation: padSk_liShow 1s ease 0.6s forwards; animation: padSk_liShow 1s ease 0.6s forwards; }
+.padSkill_left.padS_cur li.padSkill_li2 { -moz-animation: padSk_liShow 1s ease 1.2s forwards; -ms-animation: padSk_liShow 1s ease 1.2s forwards; -o-animation: padSk_liShow 1s ease 1.2s forwards; -webkit-animation: padSk_liShow 1s ease 1.2s forwards; animation: padSk_liShow 1s ease 1.2s forwards; }
+.padSkill_left.padS_cur li.padSkill_li3 { -moz-animation: padSk_liShow 1s ease 1.8s forwards; -ms-animation: padSk_liShow 1s ease 1.8s forwards; -o-animation: padSk_liShow 1s ease 1.8s forwards; -webkit-animation: padSk_liShow 1s ease 1.8s forwards; animation: padSk_liShow 1s ease 1.8s forwards; }
+.padSkill_left.padS_cur li.padSkill_li4 { -moz-animation: padSk_liShow 1s ease 2.4s forwards; -ms-animation: padSk_liShow 1s ease 2.4s forwards; -o-animation: padSk_liShow 1s ease 2.4s forwards; -webkit-animation: padSk_liShow 1s ease 2.4s forwards; animation: padSk_liShow 1s ease 2.4s forwards; }
+.padSkill_left.padS_cur li.padSkill_li5 { -moz-animation: padSk_liShow 1s ease 3.0s forwards; -ms-animation: padSk_liShow 1s ease 3.0s forwards; -o-animation: padSk_liShow 1s ease 3.0s forwards; -webkit-animation: padSk_liShow 1s ease 3.0s forwards; animation: padSk_liShow 1s ease 3.0s forwards; }
+.padSkill_left.padS_cur li.padSkill_li6 { -moz-animation: padSk_liShow 1s ease 3.6s forwards; -ms-animation: padSk_liShow 1s ease 3.6s forwards; -o-animation: padSk_liShow 1s ease 3.6s forwards; -webkit-animation: padSk_liShow 1s ease 3.6s forwards; animation: padSk_liShow 1s ease 3.6s forwards; }
+.padSkill_left.padS_cur li.padSkill_li7 { -moz-animation: padSk_liShow 1s ease 4.2s forwards; -ms-animation: padSk_liShow 1s ease 4.2s forwards; -o-animation :padSk_liShow 1s ease 4.2s forwards; -webkit-animation: padSk_liShow 1s ease 4.2s forwards; animation: padSk_liShow 1s ease 4.2s forwards; }
+@-moz-keyframes padSk_liShow {
+	from { opacity: 0;}
+	to { opacity: 1;}
+}
+@-ms-keyframes padSk_liShow {
+	from { opacity: 0;}
+	to { opacity: 1;}
+}
+@-o-keyframes padSk_liShow {
+	from { opacity: 0;}
+	to { opacity: 1;}
+}
+@-webkit-keyframes padSk_liShow {
+	from { opacity: 0;}
+	to { opacity: 1;}
+}
+@keyframes padSk_liShow {
+	from { opacity: 0;}
+	to { opacity: 1;}
+}
+.padSkill_left li.padSkill_li0 div p, .padSkill_left li.padSkill_li1 div p, .padSkill_left li.padSkill_li2 div p, .padSkill_left li.padSkill_li3 div p, .padSkill_left li.padSkill_li4 div p,.padSkill_left li.padSkill_li5 div p, .padSkill_left li.padSkill_li6 div p, .padSkill_left li.padSkill_li7 div p { height: 16px; border-radius: 20px; background: #45cfc1; position: absolute; }
+.padSkill_left.padS_cur li.padSkill_li0 div p { width: 95%; -moz-animation: padSk_liWidth 1s ease 0s forwards; -ms-animation: padSk_liWidth 1s ease 0s forwards; -o-animation: padSk_liWidth 1s ease 0s forwards; -webkit-animation: padSk_liWidth 1s ease 0s forwards; animation: padSk_liWidth 1s ease 0s forwards; }
+.padSkill_left.padS_cur li.padSkill_li1 div p { width: 90%; -moz-animation: padSk_liWidth 1s ease 0.6s forwards; -ms-animation: padSk_liWidth 1s ease 0.6s forwards; -o-animation: padSk_liWidth 1s ease 0.6s forwards; -webkit-animation: padSk_liWidth 1s ease 0.6s forwards; animation: padSk_liWidth 1s ease 0.6s forwards; }
+.padSkill_left.padS_cur li.padSkill_li2 div p { width: 92%; -moz-animation: padSk_liWidth 1s ease 1.2s forwards; -ms-animation: padSk_liWidth 1s ease 1.2s forwards; -o-animation: padSk_liWidth 1s ease 1.2s forwards; -webkit-animation: padSk_liWidth 1s ease 1.2s forwards; animation: padSk_liWidth 1s ease 1.2s forwards; }
+.padSkill_left.padS_cur li.padSkill_li3 div p { width: 85%;-moz-animation: padSk_liWidth 1s ease 1.8s forwards; -ms-animation: padSk_liWidth 1s ease 1.8s forwards; -o-animation: padSk_liWidth 1s ease 1.8s forwards; -webkit-animation: padSk_liWidth 1s ease 1.8s forwards; animation: padSk_liWidth 1s ease 1.8s forwards; }
+.padSkill_left.padS_cur li.padSkill_li4 div p { width: 80%; -moz-animation: padSk_liWidth 1s ease 2.4s forwards; -ms-animation: padSk_liWidth 1s ease 2.4s forwards; -o-animation: padSk_liWidth 1s ease 2.4s forwards; -webkit-animation: padSk_liWidth 1s ease 2.4s forwards; animation: padSk_liWidth 1s ease 2.4s forwards; }
+.padSkill_left.padS_cur li.padSkill_li5 div p { width: 70%; -moz-animation: padSk_liWidth 1s ease 3.0s forwards; -ms-animation: padSk_liWidth 1s ease 3.0s forwards; -o-animation: padSk_liWidth 1s ease 3.0s forwards; -webkit-animation: padSk_liWidth 1s ease 3.0s forwards; animation: padSk_liWidth 1s ease 3.0s forwards; }
+.padSkill_left.padS_cur li.padSkill_li6 div p { width: 85%; -moz-animation: padSk_liWidth 1s ease 3.6s forwards; -ms-animation: padSk_liWidth 1s ease 3.6s forwards; -o-animation: padSk_liWidth 1s ease 3.6s forwards; -webkit-animation: padSk_liWidth 1s ease 3.6s forwards; animation: padSk_liWidth 1s ease 3.6s forwards; }
+.padSkill_left.padS_cur li.padSkill_li7 div p { width: 92%; -moz-animation: padSk_liWidth 1s ease 4.2s forwards; -ms-animation: padSk_liWidth 1s ease 4.2s forwards; -o-animation: padSk_liWidth 1s ease 4.2s forwards; -webkit-animation: padSk_liWidth 1s ease 4.2s forwards; animation: padSk_liWidth 1s ease 4.2s forwards; }
+@-moz-keyframes padSk_liWidth {
+	from { width: 0;}
+}
+@-ms-keyframes padSk_liWidth {
+	from { width: 0;}
+}
+@-o-keyframes padSk_liWidth {
+	from { width: 0;}
+}
+@-webkit-keyframes padSk_liWidth {
+	from { width: 0;}
+}
+@keyframes padSk_liWidth {
+	from { width: 0;}
+}
+.padSkill_right h3 { color: #00ccb8; font-size: 30px; line-height: 30px; font-weight: normal; opacity: 0;}
+.padSkill_right ol { margin: 30px 0 0 0;}
+.padSkill_right ol li { color: #789e9e; font-size: 16px; line-height: 28px; opacity: 0;}
+.padSkill_right.padSR_cur h3 { -moz-animation: padSkOl_li 1s ease 0s forwards; -ms-animation:padSkOl_li 1s ease 0s forwards; -o-animation: padSkOl_li 1s ease 0s forwards; -webkit-animation: padSkOl_li 1s ease 0s forwards; animation: padSkOl_li 1s ease 0s forwards;}
+.padSkill_right.padSR_cur ol li.padSkOl_li0 { -moz-animation: padSkOl_li 1s ease 0.8s forwards; -ms-animation: padSkOl_li 1s ease 0.8s forwards; -o-animation: padSkOl_li 1s ease 0.8s forwards; -webkit-animation: padSkOl_li 1s ease 0.8s forwards; animation: padSkOl_li 1s ease 0.8s forwards; }
+.padSkill_right.padSR_cur ol li.padSkOl_li1 { -moz-animation: padSkOl_li 1s ease 1.6s forwards; -ms-animation: padSkOl_li 1s ease 1.6s forwards; -o-animation: padSkOl_li 1s ease 1.6s forwards; -webkit-animation: padSkOl_li 1s ease 1.6s forwards; animation: padSkOl_li 1s ease 1.6s forwards; }
+.padSkill_right.padSR_cur ol li.padSkOl_li2 { -moz-animation: padSkOl_li 1s ease 2.4s forwards; -ms-animation: padSkOl_li 1s ease 2.4s forwards; -o-animation: padSkOl_li 1s ease 2.4s forwards; -webkit-animation: padSkOl_li 1s ease 2.4s forwards; animation: padSkOl_li 1s ease 2.4s forwards; }
+.padSkill_right.padSR_cur ol li.padSkOl_li3 { -moz-animation: padSkOl_li 1s ease 3.2s forwards; -ms-animation: padSkOl_li 1s ease 3.2s forwards; -o-animation: padSkOl_li 1s ease 3.2s forwards; -webkit-animation: padSkOl_li 1s ease 3.2s forwards; animation: padSkOl_li 1s ease 3.2s forwards; }
+@-moz-keyframes padSkOl_li {
+	from { opacity: 0; }
+	to { opacity: 1; }
+}
+@-ms-keyframes padSkOl_li {
+	from { opacity: 0; }
+	to { opacity: 1; }
+}
+@-o-keyframes padSkOl_li {
+	from { opacity: 0; }
+	to { opacity: 1; }
+}
+@-webkit-keyframes padSkOl_li {
+	from { opacity: 0; }
+	to { opacity: 1; }
+}
+@keyframes padSkOl_li {
+	from { opacity: 0; }
+	to { opacity: 1; }
+}
+
+.aboutIn { width: 90%;}
+.aboutCon { width: 100%; height: auto;}
+.aboutCon_left { width: 100%; padding: 60px 0 0 60px;}
+.aCon_r_top { display: none;}
+.aboutCon_left .aCon_l_img { top: 72px;}
+.aboutCon_left .aCon_l_title { position: absolute; top: 18px; left: 50%; font-size: 18px; line-height: 40px;}
+.aboutCon_right { width: 100%; padding: 6% 0 0 0;}
+.aboutCon_right .aCon_r_bottom { margin: 0;}
+.aboutCon_right .aCon_r_bottom h4 { font-size: 26px; line-height: 36px; margin: 0 10% 3% 0;}
+.aboutCon_right .aCon_r_bottom p { font-size: 18px; line-height: 30px;}
+.aboutCon_right .aCon_r_bottom ul { margin: 1% 0 0 0;}

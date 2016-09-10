@@ -1,0 +1,16 @@
+﻿body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, p, blockquote, th, td, hearder, nav, aside, article, footer, figure, figcaption, hgrounp, video, avdio, meter, datalist { margin: 0; padding: 0; }
+body { font-size: 12px; color: #666; font-family: Verdana, Microsoft YaHei, Simsun, Microsoft YaHei; background: #fff; line-height: 24px; }
+fieldset, img { border: 0; }
+ol, ul { list-style: none; }
+h1, h2, h3, h4, h5, h6 { font-size: 100%; }
+em { font-style: normal; }
+input, button, select, textarea { outline: none; }
+textarea { resize: none; }
+p {	text-align: justify; text-justify: distribute; }
+a { color: #666; text-decoration: none; }
+a:hover { color: #f60; text-decoration: none; }
+.clearfix:after { content: ""; display: block; height: 0; clear: both; visibility: hidden; }
+.clearfix { display: inline-table; }
+*html .clearfix { height: 1%; }
+.clearfix {	display: block; }
+*+html .clearfix { min-height: 1%; }

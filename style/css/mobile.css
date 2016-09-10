@@ -1,0 +1,64 @@
+﻿.header { background: #00ccb8; }
+.nav, .navBtn2 { display: none !important; }
+.navBtn { width: 25px; height: 20px; display: block; background:url(img/menu.gif) no-repeat; position: absolute; right: 30px; top: 20px; transition: -webkit-transform 300ms,transform 300ms,top 400ms; }
+.navShow { -webkit-transform: rotate(-90deg); }
+.navM { width: 100%; height: auto; overflow: hidden; position: absolute; left: 0; top: 60px; display: none; }
+.navMbox { width: 100%; }
+.navM ul { width: 100%; padding: 25px 0; background: #45cfc1; overflow: hidden; }
+.navM li { height: 60px; line-height: 60px; text-align: center; }
+.navM li a { width: 100%; height: 100%; display: inline-block; color: #FFF; font-size: 20px; transition: all 0.8s; } 
+.navM li a:hover { color: #028d7f; }
+
+.padBanner{ bottom: -12px; }
+.padBanner ol li{ width: 18px; height: 40px; }
+
+.serviceIn .serCon{ margin: 2% 0 0 0; }
+.serviceIn .serCon ul li{ width: 100%; }
+.serviceIn .serCon ul li .serconImg00, .serviceIn .serCon ul li .serconImg01, .serviceIn .serCon ul li .serconImg02, .serviceIn .serCon ul li .serconImg03{ width: 48%; float: left;display: inline-block; }
+.serviceIn .serCon ul li h4{ width: 50%; display: inline-block; font-size: 24px; }
+.serviceIn .serCon ul li p{ width: 50%; display: inline-block; font-size: 18px; }
+
+.webUl li{ width: 76%; margin: 0 12% 4% 12%; }
+.padApp, .padUi{ width: 72%; margin: 0 14%; }
+.padApp{ margin: 0 14% 5% 14%; }
+
+.padBanw { display: none; }
+/*mobBannerWork内容*/
+.mobBanw{ width: 100%; height: auto; position: relative; display: block; padding: 40px 0 80px 0; overflow: hidden; }
+.mobBanw img { display: block; }
+.mobBanwIn { width: 350px; height: auto; margin: 0 auto; position: relative; border-radius: 8px; border: 6px solid #F1F1F1; -webkit-perspective: 500px; }
+.mobBanwIn .mobBanwAdd p { width: 34px; height: 18px; position: absolute; background: url(img/mobBwImg00.jpg) no-repeat; transition: all 1s ease 0s; }
+.mobBanwIn.mobFei .mobBanwAdd p { opacity: 0; }
+
+.mobBanwBnts .mobBanw_LBnt, .mobBanwBnts .mobBanw_RBnt { position: absolute; width: 44px; height: 44px; top: 50%; margin: -22px 0 0 0; background: url(img/jianTou.png) no-repeat; z-index: 101; display: none; }
+.mobBanwBnts .mobBanw_LBnt { background-position: left top; left: 2%; }
+.mobBanwBnts .mobBanw_RBnt { background-position: right top; right: 2%; }
+
+.padSkill { padding: 2% 0; }
+.padSkill_left, .padSkill_right { width: 100%; }
+.padSkill_left li { margin: 0; }
+.padSkill_right { margin: 5% 0 0 0; }
+.padSkill_right ol { margin: 1% 0 6% 0; }
+.padSkill_right ol li { font-size: 18px; margin: 2% 0 0 0; }
+
+.aboutCon_left { padding: 40px 0 0 0; }
+.aboutCon_left .aCon_l_img { left: 7px; top: 52px; }
+.aboutCon_left .aCon_l_title { top: 0; left: 40% ;}
+
+@media screen and (max-width:500px) {
+	.Chrome { width: 90%; left: 5%; margin: -127px 0 0 0; }
+	.Chrome h3 { padding: 8% 10% 7%; }
+	.Chrome p{ padding: 0 10%; }
+	.chromeDown { margin: 5% 0 0 10%; }
+	.serviceIn .serCon ul li { padding: 0 18%; }
+	.serviceIn .serCon ul li .serconImg00, .serviceIn .serCon ul li .serconImg01, .serviceIn .serCon ul li .serconImg02, .serviceIn .serCon ul li .serconImg03 { width: 222px; }
+	.webUl li { margin: 0 0 4% 0; }
+	.padApp, .padUi { margin:0 4% 5% 4%; }
+	.mobBanwIn { width: 300px; overflow: hidden; }
+	.serviceIn .serCon ul li h4 { width: 100%; }
+	.serviceIn .serCon ul li p { width: 100%; }
+	.aboutCon_left { padding: 40px 0 0 80px; }
+	.aboutCon_left .aCon_l_img { left: 87px; }
+	.aboutCon_left .aCon_l_title { position: static; padding: 0; }
+	.aboutCon .Copyright { padding: 800px 0 0 0 ;}
+}
